@@ -1,12 +1,27 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <Header/>
+    <!--router-view/-->
+    <Home/>
+    <Skills/>
+    <Footer/>
   </div>
 </template>
+<script>
+import Header from '@/components/MyHeader'
+import Footer from '@/components/MyFooter'
+import Skills from '@/components/Skills'
+import Home from '@/views/Home'
+
+export default {
+  components: {
+    Header,
+    Home,
+    Footer,
+    Skills
+  }
+}
+</script>
 
 <style lang="scss">
 @import './scss/main.scss';

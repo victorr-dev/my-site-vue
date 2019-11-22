@@ -1,13 +1,11 @@
 <template>
   <div class="small">
     <line-chart :chart-data="datacollection" :options='options'></line-chart>
-    <button @click="fillData()">Randomize</button>
   </div>
 </template>
 
 <script>
 import LineChart from '@/utils/line.js'
-import { green, red, pink, black } from 'color-name'
 
 export default {
   components: {
@@ -17,7 +15,12 @@ export default {
     return {
       datacollection: null,
       options: {
-        colors: [pink, red, green, black]
+        legend: {
+          display: true
+        },
+        tooltips: false,
+        responsive: true,
+        maintainAspectRatio: false
       }
     }
   },
@@ -27,12 +30,13 @@ export default {
   methods: {
     fillData () {
       this.datacollection = {
-        labels: ['NodeJs', 'SQL', 'Java', '.Net', 'NoSQL'],
+        labels: ['NodeJs'],
         datasets: [
           {
             label: 'Data One',
-            backgroundColor: '#e56060',
-            data: [100, 50, 30, 20, 80]
+            backgroundColor: ['#e56060', '#e56077', '#aa6060'],
+            data: [90, 10],
+            borderWidth: 10
           }
         ]
       }

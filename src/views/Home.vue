@@ -6,7 +6,7 @@
           Victor Sinuhé Ruiz Pérez
         </h1>
         <h2 class="subtitle">
-          Desarrollador Front-end y Back-end
+          Desarrollador Front-end, Back-end y Dispositivos Móviles.
         </h2>
       </div>
     </div>

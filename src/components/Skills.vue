@@ -1,29 +1,29 @@
 <template>
     <section class="section">
-      <div class="columns">
-        <div class="column">
-          <Skill :options='options' :data='dataCollection'/>
+        <h2 class="title is-2">
+          Conocimientos
+        </h2>
+        <div class="columns is-multiline">
+          <div v-for="item in skills" :key="item.labels[0]" class="column">
+            <Skill
+              :title=item.labels[0]
+              :percentage=item.datasets[0].data[0]
+              :options='options'
+              :data='item'/>
+          </div>
         </div>
-        <div class="column">
-          <Skill :options='options' :data='dataCollection'/>
-        </div>
-        <div class="column">
-          <Skill :options='options' :data='dataCollection'/>
-        </div>
-      </div>
     </section>
 </template>
 <script>
+import data from '@/utils/dataSkills'
 import Skill from '@/components/Skill'
 export default {
   name: 'Skills',
-  components: {
-    Skill
-  },
+  components: { Skill },
   data () {
     return {
-      dataCollection: null,
-      options: null
+      skills: [],
+      options: {}
     }
   },
   mounted () {
@@ -31,27 +31,18 @@ export default {
   },
   methods: {
     fillData () {
-      this.dataCollection = {
-        labels: ['NodeJs'],
-        datasets: [
-          {
-            label: 'Data One',
-            backgroundColor: ['#e56060', '#ffffff'],
-            data: [90, 10],
-            borderWidth: 1
-          }
-        ]
-      }
-
-      this.options = {
-        legend: {
-          display: false
-        },
-        tooltips: false,
-        responsive: true,
-        maintainAspectRatio: false
-      }
+      this.skills = data.data
+      this.options = data.options
     }
   }
 }
 </script>
+<style scoped>
+  .columns {max-width: 100%;}
+  @media(max-width: 767px) {
+  .custom-columns {
+    flex-direction: column-reverse;
+    display: flex;
+  }
+}
+</style>

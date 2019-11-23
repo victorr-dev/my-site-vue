@@ -9,8 +9,8 @@
           <div class="navbar-menu">
             <div class="navbar-end">
               <router-link class="navbar-item" to="/">Inicio</router-link>
-              <router-link class="navbar-item" to="/about">Habilidades</router-link>
-              <router-link class="navbar-item" to="/about">Proyectos</router-link>
+              <router-link class="navbar-item" to="/">Conocimientos</router-link>
+              <router-link class="navbar-item" to="/">Proyectos</router-link>
             </div>
           </div>
         </nav>

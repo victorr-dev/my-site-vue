@@ -65,7 +65,7 @@ const data = [{
     {
       label: 'Data One',
       backgroundColor: [blueColor2, '#ffffff'],
-      data: calculateRanking(77),
+      data: calculateRanking(65),
       borderWidth: 1
     }
   ]

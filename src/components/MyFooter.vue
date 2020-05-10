@@ -2,7 +2,7 @@
     <footer class="footer">
         <div class="content has-text-centered">
             <p>
-                Copyright 2019 <strong>Victor Ruiz</strong> All Rights Reserved.
+                Copyright 2020 <strong>Victor Ruiz</strong> All Rights Reserved.
             </p>
         </div>
     </footer>

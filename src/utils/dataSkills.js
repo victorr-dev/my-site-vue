@@ -30,22 +30,12 @@ const data = [{
     }
   ]
 }, {
-  labels: ['React'],
-  datasets: [
-    {
-      label: 'Data One',
-      backgroundColor: [blueColor3, '#ffffff'],
-      data: calculateRanking(58),
-      borderWidth: 1
-    }
-  ]
-}, {
-  labels: ['SQL'],
+  labels: ['SQL / PLSQL'],
   datasets: [
     {
       label: 'Data One',
       backgroundColor: [blueColor4, '#ffffff'],
-      data: calculateRanking(85),
+      data: calculateRanking(70),
       borderWidth: 1
     }
   ]
@@ -65,7 +55,7 @@ const data = [{
     {
       label: 'Data One',
       backgroundColor: [blueColor2, '#ffffff'],
-      data: calculateRanking(65),
+      data: calculateRanking(60),
       borderWidth: 1
     }
   ]
@@ -86,6 +76,16 @@ const data = [{
       label: 'Data One',
       backgroundColor: [blueColor4, '#ffffff'],
       data: calculateRanking(90),
+      borderWidth: 1
+    }
+  ]
+}, {
+  labels: ['Docker'],
+  datasets: [
+    {
+      label: 'Data One',
+      backgroundColor: [blueColor4, '#ffffff'],
+      data: calculateRanking(60),
       borderWidth: 1
     }
   ]
